@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/assets/logo.png"><link rel="stylesheet" href="/css/style.css"><script defer src="/js/app.js"></script>
+<title>ClipNova Dashboard</title></head><body><div class="loader"><div><div class="spin"></div><p style="text-align:center;color:var(--muted);font-weight:800">ClipNova Loading</p></div></div><div class="noise"></div><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><header class="topbar"><a class="brand" href="/dashboard"><img src="/assets/logo.png"><span>ClipNova</span></a><button class="hamb" data-toggle-sidebar>☰</button></header>
+<div class="layout"><aside class="sidebar" id="sidebar">
+  <div class="side-title" data-i18n="lang">Language</div>
+  <button class="lang-btn" data-lang="en">🇺🇸 English</button>
+  <button class="lang-btn" data-lang="id">🇮🇩 Indonesia</button>
+  <div class="side-title" data-i18n="downloader">Downloader</div>
+  <a class="side-link" href="/tiktok">🎵 <span>TikTok<small data-i18n="tiktok">Download TikTok videos.</small></span></a>
+  <a class="side-link" href="/spotify">🎧 <span>Spotify<small data-i18n="spotify">Download Spotify audio.</small></span></a>
+  <a class="side-link" href="/pinterest">📌 <span>Pinterest<small data-i18n="pinterest">Download Pinterest media.</small></span></a>
+  <a class="side-link" href="/facebook">📘 <span>Facebook<small data-i18n="facebook">Download Facebook videos.</small></span></a>
+  <a class="side-link" href="/instagram">📸 <span>Instagram<small data-i18n="instagram">Download Instagram videos.</small></span></a>
+  <a class="side-link" href="/youtube-mp4">▶️ <span>YouTube MP4<small data-i18n="ytmp4">Download YouTube videos.</small></span></a>
+  <a class="side-link" href="/youtube-mp3">🎶 <span>YouTube MP3<small data-i18n="ytmp3">Download YouTube audio.</small></span></a>
+  <div class="side-title" data-i18n="others">Others</div>
+  <a class="side-link" id="waLink" href="#" target="_blank">📢 <span data-i18n="wa">WhatsApp Channel</span></a>
+  <a class="side-link" href="/report">🛠️ <span data-i18n="report">Report</span></a>
+</aside>
+<main class="main"><section class="hero"><span class="badge">⚡ No-logo downloader panel</span><h1 data-i18n="heroTitle">Fast media downloader with a clean modern dashboard.</h1><p data-i18n="heroDesc">ClipNova helps you save supported media through a secure backend route.</p><div class="actions"><a class="btn" href="/tiktok" data-i18n="start">Start Downloading</a><a class="btn secondary" href="/report" data-i18n="openReport">Report an Issue</a></div></section><h2 style="margin:28px 0 8px" data-i18n="available">Available tools</h2><div class="grid"><a class="card" href="/tiktok"><div class="ico">🎵</div><h3>TikTok</h3><p data-i18n="tiktok"></p></a><a class="card" href="/spotify"><div class="ico">🎧</div><h3>Spotify</h3><p data-i18n="spotify"></p></a><a class="card" href="/pinterest"><div class="ico">📌</div><h3>Pinterest</h3><p data-i18n="pinterest"></p></a><a class="card" href="/facebook"><div class="ico">📘</div><h3>Facebook</h3><p data-i18n="facebook"></p></a><a class="card" href="/instagram"><div class="ico">📸</div><h3>Instagram</h3><p data-i18n="instagram"></p></a><a class="card" href="/youtube-mp4"><div class="ico">▶️</div><h3>YouTube MP4</h3><p data-i18n="ytmp4"></p></a><a class="card" href="/youtube-mp3"><div class="ico">🎶</div><h3>YouTube MP3</h3><p data-i18n="ytmp3"></p></a><a class="card" href="/report"><div class="ico">🛠️</div><h3>Report</h3><p data-i18n="reportDesc"></p></a></div><footer class="footer">© 2026 ClipNova. Backend API secured by serverless route.</footer></main></div><div class="toast"></div><script>fetch('/api/health').then(r=>r.json()).then(j=>{if(j.whatsapp)document.getElementById('waLink').href=j.whatsapp})</script></body></html>

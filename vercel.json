@@ -1,0 +1,78 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/app/index.html"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/app/index.html"
+    },
+    {
+      "source": "/report",
+      "destination": "/app/report.html"
+    },
+    {
+      "source": "/tiktok",
+      "destination": "/downloaders/tiktok.html"
+    },
+    {
+      "source": "/spotify",
+      "destination": "/downloaders/spotify.html"
+    },
+    {
+      "source": "/pinterest",
+      "destination": "/downloaders/pinterest.html"
+    },
+    {
+      "source": "/facebook",
+      "destination": "/downloaders/facebook.html"
+    },
+    {
+      "source": "/instagram",
+      "destination": "/downloaders/instagram.html"
+    },
+    {
+      "source": "/youtube-mp4",
+      "destination": "/downloaders/youtube-mp4.html"
+    },
+    {
+      "source": "/youtube-mp3",
+      "destination": "/downloaders/youtube-mp3.html"
+    }
+  ]
+}
